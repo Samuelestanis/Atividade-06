@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro n1, n2, a, b, resto, mdc, mmc
+
+		escreva("Digite o primeiro número: ")
+		leia(n1)
+		escreva("Digite o segundo número: ")
+		leia(n2)
+
+		a = n1
+		b = n2
+
+	
+		enquanto (b != 0)
+		{
+			resto = a % b
+			a = b
+			b = resto
+		}
+		mdc = a
+
+	
+		mmc = (n1 * n2) / mdc
+		
+		
+		se (mmc < 0) { mmc = mmc * -1 }
+
+		escreva("O MMC entre ", n1, " e ", n2, " é: ", mmc)
+	}
+}
